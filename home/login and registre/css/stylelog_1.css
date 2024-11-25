@@ -3987,7 +3987,6 @@ ul.ordered-list li::before {
 /*=========== bj_features_item  css =========*/
 .features_box {
   margin-top: 100px;
-  justify-content: center;
 }
 
 .bj_features_item {
@@ -4912,7 +4911,42 @@ ul.ordered-list li::before {
   margin-bottom: 25px;
 }
 
-
+.play-btn {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s linear;
+}
+.play-btn:before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  animation-delay: 0s;
+  -webkit-animation: pulsate1 2s;
+  animation: pulsate1 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  top: -25%;
+  left: -25%;
+  background: rgba(198, 16, 0, 0);
+}
+.play-btn:hover {
+  transform: scale(1.05) translate(-50%, -50%);
+}
 
 @keyframes pulsate1 {
   0% {

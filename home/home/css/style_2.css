@@ -3987,6 +3987,7 @@ ul.ordered-list li::before {
 /*=========== bj_features_item  css =========*/
 .features_box {
   margin-top: 100px;
+  justify-content: center;
 }
 
 .bj_features_item {
